@@ -12,6 +12,9 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "files": [
+      "node_modules/firebase/app.d.ts"
+    ],
     "lib": [
       "es2016",
       "dom"

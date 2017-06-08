@@ -4,23 +4,33 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "4.0.5"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.0.6",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angularfire2": "^4.0.0-rc.1",
     "core-js": "^2.4.1",
+    "express": "^4.15.3",
+    "firebase": "^4.1.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
